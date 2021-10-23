@@ -1,5 +1,6 @@
 ---
 permalink: /egg.html
+filename: egg-counter.md
 ---
 
 
