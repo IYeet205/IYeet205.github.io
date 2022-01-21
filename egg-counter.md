@@ -12,6 +12,3 @@ title: "egg counter"
     <div class="Front-Text">
       <font size="100px">
         <a href="https://shatterdest.github.io/" targer="_blank">Go Home</a>
-    </div>
-  </header>
-</body>
