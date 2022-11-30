@@ -1,6 +1,7 @@
 html,
 body,
 * {
+  font-family: "Quicksand", sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -16,16 +17,13 @@ body {
   background-size: cover;
 }
 
-.header {
-    
-}
-
 .navbar {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   border-bottom: 3px solid white;
+  position: relative;
 }
 
 .li {
@@ -50,7 +48,6 @@ a,
 a:link,
 a:visited,
 a:active {
-  font-family: "Montserrat", sans-serif;
   text-align: center;
   font-size: 16px;
   color: white;
@@ -58,17 +55,118 @@ a:active {
 }
 
 .egg {
-    aspect-ratio: 16/9;
-    height: 90vh;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-    margin-left: 8vw;
-    margin-right: auto;
+  aspect-ratio: 16/9;
+  height: 90vh;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  margin-left: 8vw;
+  margin-right: auto;
 }
 
 .title-text {
-    text-align: center;
-    font-size: 48px;
-    color: white;
-    text-decoration: none;
+  text-align: center;
+  font-size: 36px;
+  color: white;
+  font-weight: bold;
+  display: inline;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+
+.wip {
+  text-align: center;
+  font-size: 350px;
+  font-weight: 900;
+  text-shadow: 14px 0 0 rgba(0, 0, 0, 0.486), 0 -1px 0 rgba(0, 0, 0, 0.486),
+    0 1px 0 rgba(0, 0, 0, 0.486), -1px 0 0 rgba(0, 0, 0, 0.486);
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 95vw;
+  margin: 50px auto;
+}
+
+.card {
+  width: 41%;
+  background-color: rgba(21, 16, 25, 0.14);
+  text-align: center;
+  transition: 0.3s all;
+  border: 2px rgba(255, 255, 255, 0.77) solid;
+  border-radius: 14px;
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.card-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  position: top;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.card-desc {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 3%;
+}
+
+.card-text {
+  background-color: rgba(12, 13, 26, 0.69);
+  border: 1px solid white;
+  color: white;
+  padding: 15px 32px;
+  border-radius: 14px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-bottom: 5%;
+  justify-content: space-between;
+  transition: 0.3s all;
+}
+
+.card-text:hover {
+  background-color: white;
+  color: black;
+}
+
+a,
+a:link,
+a:visited,
+a:active {
+  text-align: center;
+  font-size: 16px;
+  position: relative;
+  color: white;
+  text-decoration: none;
+}
+
+a:hover,
+a:link:hover,
+a:visited:hover,
+a:active:hover {
+  transform: translate3D(0, -5px, 0) scale(1.05);
+}
+.card:hover {
+  box-shadow: 0 2px 4px 3px rgba(255, 255, 255, 0.6);
+  transform: translate3D(0, -1px, 0) scale(1.03);
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
 }
