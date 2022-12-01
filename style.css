@@ -98,7 +98,7 @@ a:active {
   transition: 0.3s all;
   border: 2px rgba(255, 255, 255, 0.77) solid;
   border-radius: 14px;
-  animation: fadeIn 2s;
+  animation: fadeIn 4.1s;
 }
 
 @keyframes fadeIn {
