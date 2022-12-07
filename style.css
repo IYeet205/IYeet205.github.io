@@ -159,10 +159,14 @@ a:active {
   transform: translate3D(0, -1px, 0) scale(1.03);
 }
 
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
+@media screen and (max-width: 700px) {
+  .title-text {
     display: block;
-    margin-bottom: 20px;
+  }
+  .navbar {
+    margin-top: 14%;
+  }
+  .flex-container {
+    flex-direction: column;
   }
 }
