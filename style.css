@@ -169,4 +169,8 @@ a:active {
   .flex-container {
     flex-direction: column;
   }
+  .card{
+    width: 90vw;
+    margin-bottom: 14%;
+  }
 }
