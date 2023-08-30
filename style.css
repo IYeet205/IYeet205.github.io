@@ -17,7 +17,7 @@ body {
   background-size: cover;
 }
 
-.navbar {
+.menu {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -42,7 +42,7 @@ body {
 .li .nav-item:hover {
   background-color: white;
   color: black;
-  
+
 }
 
 a,
@@ -102,8 +102,13 @@ a:active {
 }
 
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .card-title {
@@ -113,6 +118,10 @@ a:active {
   position: top;
   margin-top: 5%;
   margin-bottom: 5%;
+}
+
+.navbar {
+  padding-bottom: 20px;
 }
 
 .card-desc {
@@ -159,18 +168,30 @@ a:active {
   transform: translate3D(0, -1px, 0) scale(1.03);
 }
 
-@media screen and (max-width: 700px) {
-  .title-text {
+.ham-button {
+  display: none;
+  background-color: rgba(1, 1, 1, 0);
+  color: white;
+  border-color: rgba(1, 0, 1, 0);
+  font-size: 50px;
+  float: left;
+  margin-left: 20px;
+  padding: 0 0 0 0;
+}
+
+@media screen and (max-width: 900px) {
+
+  .ham-button {
     display: block;
   }
-  .navbar {
-    margin-top: 14%;
+
+  .li {
+    visibility: hidden;
   }
-  .flex-container {
-    flex-direction: column;
-  }
-  .card{
-    width: 90vw;
-    margin-bottom: 14%;
+
+  .title-text {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
   }
 }
